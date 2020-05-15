@@ -14,5 +14,6 @@ steps:
 - script: python -m pip install behave
   displayName: 'Install dependencies'
   
+- script: cd calculator
 - script: behave
   displayName: 'Run basic calculator operations'
