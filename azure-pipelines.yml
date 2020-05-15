@@ -13,7 +13,8 @@ steps:
 - script: pip install zeep
 - script: pip install git+https://github.com/behave/behave
   displayName: 'Install dependencies'
-  
+
+- script: dir  
 - script: cd calculator
 - script: behave
   displayName: 'Run basic calculator operations'
