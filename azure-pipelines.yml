@@ -10,5 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: python -m pip install zeep
+- script: python -m pip install behave
+  displayName: 'Install dependencies'
+  
 - script: behave
   displayName: 'Run basic calculator operations'
