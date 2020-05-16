@@ -6,12 +6,11 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
-
 steps:
-- script: pip install zeep
-- script: pip install git+https://github.com/behave/behave
-- script: dir  
-- script: cd calculator
-- script: behave
+ - script: pip install python
+ - script: py test.py
+# - script: pip install zeep
+# - script: pip install git+https://github.com/behave/behave
+# - script: dir  
+# - script: cd calculator
+# - script: behave
