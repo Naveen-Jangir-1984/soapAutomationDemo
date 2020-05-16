@@ -14,4 +14,4 @@ steps:
 - script: pip install git+https://github.com/behave/behave
 - script: dir  
 - script: cd calculator
-- script: %behave
+- script: behave
