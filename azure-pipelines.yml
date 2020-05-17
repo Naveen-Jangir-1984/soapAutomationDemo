@@ -11,8 +11,8 @@ steps:
     inputs:
       versionSpec: '3.6'
 
-  # - script: pip install zeep
-  # - script: pip install behave
-  - script: cd calculator/features
-  - script: dir
+  - script: pip install zeep
+  - script: pip install behave
+  - script: behave calculator/features
+  # - script: dir
   # - script: behave
