@@ -13,5 +13,4 @@ steps:
 
   - script: pip install zeep
   - script: pip install behave
-  - script: python -m visdom.server
   - script: behave
