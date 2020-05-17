@@ -29,7 +29,7 @@ def step_impl(context):
 
 @when('multiply button is pressed')
 def step_impl(context):
-    context.result = client.service.mulitply(context.number1, context.number2)    
+    context.result = client.service.multiply(context.number1, context.number2)    
 #     context.result = context.number1 * context.number2
 
 @then('result is {result:d}')
