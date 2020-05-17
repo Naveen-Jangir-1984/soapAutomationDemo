@@ -10,9 +10,9 @@ steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.6'
-
-  - script: pip install zeep
-  - script: pip install behave
-  - script: cd calculator
-  - script: cd features
-  - script: behave
+  - script: python test.py
+  # - script: pip install zeep
+  # - script: pip install behave
+  # - script: cd calculator
+  # - script: cd features
+  # - script: behave
