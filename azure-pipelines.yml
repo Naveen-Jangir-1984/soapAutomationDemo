@@ -3,16 +3,17 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger: none 
+# trigger: none 
+trigger:
 #   - master
 
-schedules:
-- cron: "* * * * *"
-  displayName: "hourly build"
-  branches:
-    include:
-    - master
-  always: "true"
+# schedules:
+# - cron: "* * * * *"
+#   displayName: "hourly build"
+#   branches:
+#     include:
+#     - master
+#   always: "true"
 
 steps:
   - task: UsePythonVersion@0
