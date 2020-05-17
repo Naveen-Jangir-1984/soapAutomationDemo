@@ -6,11 +6,12 @@
 trigger:
 - master
 
-steps:
- - script: pip install python
- - script: py test.py
-# - script: pip install zeep
-# - script: pip install git+https://github.com/behave/behave
-# - script: dir  
-# - script: cd calculator
-# - script: behave
+language: python
+python:
+  - "3.7"
+  - "2.7"
+install:
+  - pip install -U -r py.requirements/ci.travis.txt --use-mirrors
+script: 
+ - cd calculator
+ - behave
