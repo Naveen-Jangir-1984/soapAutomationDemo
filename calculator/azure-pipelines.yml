@@ -11,8 +11,6 @@ steps:
     inputs:
       versionSpec: '3.6'
 
-  - script: mkdir calculator
-  - script: cp features calculator
   - script: pip install zeep
   - script: pip install behave
-  # - script: behave
+  - script: behave calculator
