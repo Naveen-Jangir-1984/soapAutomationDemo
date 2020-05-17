@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 schedules:
-  - cron: "0 18 47 ? * *"
+  - cron: 0 18 47 ? * *
 
 trigger:
 - master
