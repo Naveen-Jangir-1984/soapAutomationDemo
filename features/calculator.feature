@@ -1,6 +1,6 @@
 Feature: Calculator
 
-    As a user I want to perform some basic operations on calculator
+    As a user I want to perform basic operations on calculator
 
     Scenario Outline: Add two numbers
         Given a number <number1> is entered
@@ -10,8 +10,8 @@ Feature: Calculator
 
         Examples:
         | number1 | number2 | result |
-        | 3       | 2       | 5      |
-        | 33      | 22      | 55     |
+        | 4       | 2       | 6      |
+        | 44      | 22      | 66     |
     
     Scenario Outline: Subtract two numbers
         Given a number <number1> is entered
@@ -21,5 +21,27 @@ Feature: Calculator
 
         Examples:
         | number1 | number2 | result |
-        | 3       | 2       | 1      |
-        | 33      | 22      | 11     |
+        | 4       | 2       | 2      |
+        | 44      | 22      | 22     |
+    
+    Scenario Outline: Divide two numbers
+        Given a number <number1> is entered
+        And another number <number2> is entered
+        When divide button is pressed
+        Then result is <result>
+
+        Examples:
+        | number1 | number2 | result |
+        | 4       | 2       | 2      |
+        | 44      | 22      | 2      |
+    
+    Scenario Outline: Mulitply two numbers
+        Given a number <number1> is entered
+        And another number <number2> is entered
+        When mulitply button is pressed
+        Then result is <result>
+
+        Examples:
+        | number1 | number2 | result |
+        | 4       | 2       | 8      |
+        | 44      | 22      | 968    |
