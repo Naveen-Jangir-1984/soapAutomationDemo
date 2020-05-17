@@ -11,6 +11,6 @@ steps:
     inputs:
       versionSpec: '3.6'
 
-  # - script: pip install zeep
+  - script: pip install zeep
   - script: pip install behave
   - script: behave
