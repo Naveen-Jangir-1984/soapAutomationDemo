@@ -13,6 +13,6 @@ steps:
 
   # - script: pip install zeep
   # - script: pip install behave
-  - script: cd calculator
-  - script: pwd
+  - script: cd calculator/features
+  - script: dir
   # - script: behave
