@@ -5,7 +5,7 @@
 
 # trigger: none 
 trigger:
-#   - master
+  - master
 
 # schedules:
 # - cron: "* * * * *"
