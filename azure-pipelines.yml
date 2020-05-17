@@ -13,5 +13,6 @@ steps:
       
   - script: pip install zeep
   - script: pip install behave
-  - script: cd /calculator/features
+  # - script: cd calculator
+  - script: cd features
   - script: behave
