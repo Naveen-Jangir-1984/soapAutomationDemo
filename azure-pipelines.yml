@@ -7,6 +7,6 @@ trigger:
 - master
 
 steps:
-  - script: pip install -U -r py.requirements/ci.travis.txt --use-mirrors
-  - script: cd calculator
-  - script: behave
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.6'
