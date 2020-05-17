@@ -15,4 +15,4 @@ steps:
   - script: pip install behave
   - script: cd calculator/features
   # - script: cd features
-  - script: behave
+  - script: behave features/calculator_steps.py
