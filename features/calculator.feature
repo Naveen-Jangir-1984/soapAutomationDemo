@@ -35,10 +35,10 @@ Feature: Calculator
         | 4       | 2       | 2      |
         | 44      | 22      | 2      |
     
-    Scenario Outline: Mulitply two numbers
+    Scenario Outline: Multiply two numbers
         Given a number <number1> is entered
         And another number <number2> is entered
-        When mulitply button is pressed
+        When multiply button is pressed
         Then result is <result>
 
         Examples:
