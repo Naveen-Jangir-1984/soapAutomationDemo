@@ -22,6 +22,16 @@ def step_impl(context):
     context.result = client.service.Subtract(context.number1, context.number2)    
 #     context.result = context.number1 - context.number2
 
+@when('divide button is pressed')
+def step_impl(context):
+    context.result = client.service.Divide(context.number1, context.number2)    
+#     context.result = context.number1 / context.number2
+
+@when('multiply button is pressed')
+def step_impl(context):
+    context.result = client.service.Mulitply(context.number1, context.number2)    
+#     context.result = context.number1 * context.number2
+
 @then('result is {result:d}')
 def step_impl(context, result):
     assert context.result == result, 'Operation Failed !'
