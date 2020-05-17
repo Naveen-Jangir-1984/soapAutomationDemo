@@ -10,3 +10,8 @@ steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.6'
+
+  - script: pip install zeep
+  - script: pip install behave
+  - script: cd calulator
+  - script: behave
